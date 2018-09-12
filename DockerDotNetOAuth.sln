@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerDotNetOAuth", "DockerDotNetOAuth\DockerDotNetOAuth.csproj", "{182389F9-7695-4DE4-82B1-3F2D69C69C94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerDotNetOAuth", "DockerDotNetOAuth\DockerDotNetOAuth.csproj", "{182389F9-7695-4DE4-82B1-3F2D69C69C94}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9BD31EA4-F116-4C7C-9F31-D85310C29080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{5DFBAA3D-93C7-4155-A8AA-ED869CE728B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{5DFBAA3D-93C7-4155-A8AA-ED869CE728B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{090D8568-8B65-4BCC-89CA-78DA293C122A}"
 	ProjectSection(SolutionItems) = preProject

@@ -10,7 +10,7 @@ Test Client
     function GetToken() {
         $.ajax({
                 type: 'POST',
-                url: 'http://localhost:32772/connect/token',
+                url: 'http://157.56.176.142:32772/connect/token',
                 crossDomain: true,
                 timeout: 2000,
                 data: {
@@ -21,25 +21,26 @@ Test Client
                 }
             })
             .done(function(data) {
-                console.log("Got token: " + data.access_token);
+                console.log(`Got token: ${data.access_token}`);
                 //CallService(data.access_token);
             });
     }
 
     function CallService(token) {
         $.ajax({
-                type: 'GET',
-                url: 'http://localhost:32771/api/values',
-                crossDomain: true,
-                timeout: 2000,
-                beforeSend: function(xhr) { xhr.setRequestHeader('Authorization','Bearer ' + token) }
-            })
-            .done(function(data) {
-                console.log(data);
-            });
+            type: 'GET',
+            url: 'http://157.56.176.142:32771/api/values',
+            crossDomain: true,
+            timeout: 2000,
+            beforeSend: function(xhr) { xhr.setRequestHeader('Authorization', `Bearer ${token}`) };
+    })
+    .
+    done(function(data) {
+        console.log(data);
+    });
     }
 
-    $(function () {
+    $(function() {
         GetToken();
     });
 </script>

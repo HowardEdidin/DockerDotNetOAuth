@@ -12,7 +12,7 @@ namespace IdentityServer
         {
             return new List<ApiResource>
             {
-                new ApiResource("api1", "My API")
+                new ApiResource("api1", "HL7 Connect")
             };
         }
 
@@ -35,7 +35,7 @@ namespace IdentityServer
 
                     // scopes that client has access to
                     AllowedScopes = { "api1" },
-                    AllowedCorsOrigins = new[] {"http://localhost:32773"},
+                    AllowedCorsOrigins = new[] {"http://157.56.176.142:32773"},
                 }
             };
         }
