@@ -35,7 +35,7 @@ namespace IdentityServer
 
                     // scopes that client has access to
                     AllowedScopes = { "api1" },
-                    AllowedCorsOrigins = new[] {"http://157.56.176.142:32773"},
+                    AllowedCorsOrigins = new[] {"http://hl7-fhir.com:32773"},
                 }
             };
         }

@@ -5,12 +5,12 @@
 </head>
 <body>
 Test Client
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"/></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
     function GetToken() {
-        $.ajax({
+        window.$.ajax({
                 type: 'POST',
-                url: 'http://157.56.176.142:32772/connect/token',
+                url: 'http://hl7-fhir.com:32772/connect/token',
                 crossDomain: true,
                 timeout: 2000,
                 data: {
@@ -27,17 +27,16 @@ Test Client
     }
 
     function CallService(token) {
-        $.ajax({
+        window.$.ajax({
             type: 'GET',
-            url: 'http://157.56.176.142:32771/api/values',
+            url: 'http://hl7-fhir.com:32771/api/values',
             crossDomain: true,
             timeout: 2000,
-            beforeSend: function(xhr) { xhr.setRequestHeader('Authorization', `Bearer ${token}`) };
-    })
-    .
-    done(function(data) {
-        console.log(data);
-    });
+            beforeSend: function(xhr) { xhr.setRequestHeader('Authorization', `Bearer ${token}`); }
+        });
+        done(function(data) {
+            console.log(data);
+        });
     }
 
     $(function() {

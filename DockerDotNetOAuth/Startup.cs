@@ -41,7 +41,7 @@ namespace DockerDotNetOAuth
                 builder => builder
                     .AllowAnyHeader()
                     .AllowAnyMethod()
-                    .WithOrigins("http://157.56.176.142:32773"));
+                    .WithOrigins("http://hl7-fhir.com:32773"));
 
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
